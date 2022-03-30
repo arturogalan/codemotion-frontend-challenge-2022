@@ -1,0 +1,25 @@
+<div class="layout-column align-items-center justify-content-center mt-40">
+    <h4>Customer Table</h4>
+    <section class="content layout-row align-items-center justify-content-center mt-10">
+      <table class="card content">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody data-test-id="customer-list">
+
+          <tr *ngFor="let customer of customers" class="slide-up-fade-in">
+          <!-- Use below to render row for each customer object -->
+            <td>{{ customer.firstName }}</td>
+            <td>{{ customer.lastName }}</td>
+            <td>{{ customer.age }}</td>
+            <td><button data-test-id="view-details-button" (click)="showDetails(customer)">View details</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+</div>

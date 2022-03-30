@@ -1,0 +1,32 @@
+<div class="layout-column align-items-center justify-content-center mt-40"  *ngIf="selectedCustomerDetailRecord.id">
+    <h4>Selected Customer Details</h4>
+    <section class="content layout-row align-items-center justify-content-center mt-10">
+      <table class="card content">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Gender</th>
+            <th>Pin Code</th>
+            <th>Country</th>
+            <th>State</th>
+          </tr>
+        </thead>
+        <tbody data-test-id="customer-details">
+          <tr class="slide-up-fade-in">
+            <!-- Use below to render details row -->
+            <td>{{selectedCustomerDetailRecord.firstName}}</td>
+            <td>{{selectedCustomerDetailRecord.lastName}}</td>
+            <td>{{selectedCustomerDetailRecord.age}}</td>
+            <td>{{selectedCustomerDetailRecord.city}}</td>
+            <td>{{selectedCustomerDetailRecord.gender}}</td>
+            <td>{{selectedCustomerDetailRecord.pin}}</td>
+            <td>{{selectedCustomerDetailRecord.country}}</td>
+            <td>{{selectedCustomerDetailRecord.state}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+</div>

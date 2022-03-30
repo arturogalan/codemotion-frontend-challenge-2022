@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/h8k-design@latest/dist/index.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/h8k-design@latest/dist/assets/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.esm.js"
+            type="module"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.js"></script>
+  </head>
+  <body>
+    <h8k-navbar header="The Weather Finder"></h8k-navbar>
+
+    <div class="mt-40 w-50 mx-auto">
+      <div class="mb-40 layout-row align-items-center justify-content-center">
+        <input type="text" class="white large outlined" id="city" placeholder="Select a City" data-testid="city">
+      </div>
+
+      <div class="w-50 mx-auto" id="suggestions" data-testid="suggestions">
+        <div class="suggestionItem">
+          No Info available!
+        </div>
+      </div>
+
+      <div class="card my-40 w-50 mx-auto">
+        <div class="card-text" id="selectedCityInfo" data-testid="selectedCityInfo">
+          <div>
+            <span>City:</span>
+            <span id="selectedCity" data-testid="selectedCity"></span>
+          </div>
+          <div>
+            <span>Weather:</span>
+            <span id="selectedWeather" data-testid="selectedWeather"></span>
+          </div>
+          <div>
+            <span>Status:</span>
+            <span id="selectedStatus" data-testid="selectedStatus"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- HMR and test infrastructure - DO NOT EDIT -->
+  <script src="./bundle.js"></script>
+</html>
