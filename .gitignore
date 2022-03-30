@@ -1,7 +1,7 @@
 
-.frontend-challege-part1-vanillaJs/node_modules
-.frontend-challege-part2-React/node_modules
-.frontend-challege-part3-angular/node_modules
+/frontend-challege-part1-vanillaJs/node_modules
+/frontend-challege-part2-React/node_modules
+/frontend-challege-part3-angular/node_modules
 
 
 # Logs
